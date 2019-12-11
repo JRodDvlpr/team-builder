@@ -3,14 +3,17 @@ import React from 'react';
 const FormLists = props => {
 
     return (
-        <div className="form-list">
-        {props.FormLists.map(member => (
-          <div className="note" key={member.id}>
-            <h2>{member.title}</h2>
-            <p>{member.body}</p>
-          </div>
-        ))}
-      </div>
+        <div className='team-List'>
+          {props.members.map(member => {
+            return(
+              <div className='teamMember' key={member.name}>
+                <h2>{member.name}</h2>
+                <h3>{member.role}</h3>
+                <p>{member.email}</p>
+                </div>
+            )
+          })}
+        </div>
     );
 };
 
