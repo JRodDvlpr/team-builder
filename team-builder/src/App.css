@@ -29,6 +29,7 @@
 
 .team-List {
   display: flex;
+  flex-wrap: wrap;
   
 }
 
