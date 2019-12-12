@@ -6,9 +6,9 @@ import Form from './components/Form';
 function App() {
   const [members, setMembers] = useState([
     {
-      name:'',
-      email:'',
-      role:''
+      name:'Jesus Rodriguez',
+      email:'Mialienproductions@gmail.com',
+      role:'Software Engineer'
 
     }
 
@@ -27,10 +27,10 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Team Members</h1>
-     <Form addMember={addMember} />
-     <FormList members={members} />
-    </div>
+    <h1>Team Members</h1>
+    <Form addMember={addMember} />
+    <FormList members={members} />
+   </div>
   );
 }
 

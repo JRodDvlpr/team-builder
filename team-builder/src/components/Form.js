@@ -32,7 +32,7 @@ const MemberForm = ({addMember}) => {
             name='name'
             placeholder='Enter Full Name'
             onChange={handleChanges}
-            value={teamMember.email}
+            value={teamMember.name}
             />
 
             <label htmlFor='email'>Email Address</label>
